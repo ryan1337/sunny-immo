@@ -26,8 +26,7 @@
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-  <div class="wrapper">
-
+<div class="wrapper">
     <header>
       <figure id="header-img">
         <img src="" alt="" id="header1"/>
@@ -40,48 +39,61 @@
           <a class="navbar-brand" href="index.html">Sunny-Immo</a>
         </div>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="index.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="vente.html">Vente</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li  class="active" ><a href="contact.html">Contact</a></li>
         </ul>
       </div>
     </nav>
 
-    <div class="container">
-      <div class="carousel">
+  <div class="container">
+    <article class="txt-contact">
+      <p>
 
-      </div>
+      </p>
 
+    </article>
 
-    <section id="galery">
+    <form class="form_request" action="index.html" method="post">
 
-      <!-- <figure class="img-index">
-        <img src="" alt="" />
-      </figure> -->
-      <article id="txt-index">
-          <p>Lofts, ateliers, surfaces brutes, maisons d’architecte, lieux contemporains, design ou disposant d’une terrasse ou d’un jardin, nous sélectionnons des biens qui ont tous pour point commun, leur esprit atypique et coup de cœur.</p>
-          <p>Vous rêvez de vivre dans un bien hors norme ou recherchez un expert, partageant votre passion pour l’architecture et le design ?</p>
-      </article>
+      <fieldset>
+        <legend>Vos coordonnées</legend>
 
-      <figure class="img-index col-lg-3 img-center">
-        <img src="img/appart1.jpg" alt="" class="img-responsive img-rounded" />
-      </figure>
-      <figure class="img-index col-lg-3 img-center">
-        <img src="img/appart2.jpg" alt="" class="img-responsive img-rounded"/>
-      </figure>
-      <figure class="img-index col-lg-3 img-center">
-        <img src="img/appart3.jpg" alt="" class="img-responsive img-rounded"/>
-      </figure>
-    </section>
+      <p>
+        <label for="text"> Nom :  </label>
+        <input type="text" name="nom">
+      </p>
 
+      <p>
+        <label for="text"> Prénom: </label>
+        <input type="text" name="prenom">
+      </p>
 
-    </div>
+      <p>
+        <label for="text"> Email:  </label>
+        <input type="email" name="mail">
+      </p>
+
+      <p>
+        <label for="comment"> Commentaire: </label>
+        <textarea name="com" rows="8" cols="30"></textarea>
+      </p>
+
+      <p>
+        <input type="button" name="envoy" value="Envoyer" class="envoy">
+      </p>
+
+      </fieldset>
+
+    </form>
+  </div>
 
   </div>
 
-    <footer>
+  <footer>
 
-    </footer>
+
+  </footer>
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.js"></script>
